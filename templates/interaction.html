@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interaction Page</title>
+</head>
+<body>
+    <h1>Interaction Page</h1>
+    <!-- <form method="POST" action="/interaction"> -->
+    <form method="POST" action="/interaction">
+        <input type="text" name="data" placeholder="Enter data">
+        <button type="submit">Submit</button>
+    </form>
+    {% if result %}
+        <p>Result: {{ result }}</p>
+    {% endif %}
+</body>
+</html>
